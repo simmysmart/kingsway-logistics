@@ -1,0 +1,215 @@
+/* ==========================================================
+   Project : Kingsway Multi-Services Nigeria Enterprise
+   File    : utilities.css
+   Folder  : assets/css/base/
+   Author  : SimmySmart
+   Created : 2026
+
+   PURPOSE
+   -------
+   Contains reusable utility classes used throughout
+   the website.
+
+   IMPORTANT
+   ---------
+   - Utilities should do ONE thing only.
+   - Keep class names short and meaningful.
+   - Do not place component-specific styles here.
+========================================================== */
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+/*
+   Centers content and limits the maximum width.
+*/
+.container{
+    width: min(100% - 2rem, var(--container-width));
+    margin-inline: auto;
+}
+
+
+/* ==========================================================
+   SECTION SPACING
+========================================================== */
+
+/*
+   Standard vertical spacing for all sections.
+*/
+.section{
+    padding: var(--space-8) 0;
+}
+
+
+/* ==========================================================
+   DISPLAY UTILITIES
+========================================================== */
+
+.d-flex{
+    display: flex;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-none{
+    display: none;
+}
+
+
+/* ==========================================================
+   FLEX UTILITIES
+========================================================== */
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.gap-1{
+    gap: var(--space-1);
+}
+
+.gap-2{
+    gap: var(--space-2);
+}
+
+.gap-3{
+    gap: var(--space-3);
+}
+
+.gap-4{
+    gap: var(--space-4);
+}
+
+
+/* ==========================================================
+   TEXT UTILITIES
+========================================================== */
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+
+/* ==========================================================
+   WIDTH UTILITIES
+========================================================== */
+
+.w-100{
+    width: 100%;
+}
+
+
+/* ==========================================================
+   BORDER RADIUS
+========================================================== */
+
+.rounded-sm{
+    border-radius: var(--radius-sm);
+}
+
+.rounded-md{
+    border-radius: var(--radius-md);
+}
+
+.rounded-lg{
+    border-radius: var(--radius-lg);
+}
+
+.rounded-full{
+    border-radius: var(--radius-full);
+}
+
+
+/* ==========================================================
+   SHADOWS
+========================================================== */
+
+.shadow-sm{
+    box-shadow: var(--shadow-sm);
+}
+
+.shadow-md{
+    box-shadow: var(--shadow-md);
+}
+
+.shadow-lg{
+    box-shadow: var(--shadow-lg);
+}
+
+
+/* ==========================================================
+   SPACING UTILITIES
+========================================================== */
+
+.mt-1{
+    margin-top: var(--space-1);
+}
+
+.mt-2{
+    margin-top: var(--space-2);
+}
+
+.mt-3{
+    margin-top: var(--space-3);
+}
+
+.mt-4{
+    margin-top: var(--space-4);
+}
+
+.mb-1{
+    margin-bottom: var(--space-1);
+}
+
+.mb-2{
+    margin-bottom: var(--space-2);
+}
+
+.mb-3{
+    margin-bottom: var(--space-3);
+}
+
+.mb-4{
+    margin-bottom: var(--space-4);
+}
+
+
+/* ==========================================================
+   VISIBILITY
+========================================================== */
+
+.hidden{
+    display: none !important;
+}

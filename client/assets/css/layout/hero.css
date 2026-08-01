@@ -1,0 +1,290 @@
+/* ==========================================================
+   Project : Kingsway Multi-Services Nigeria Enterprise
+   File    : hero.css
+   Folder  : assets/css/layout/
+   Author  : SimmySmart
+   Created : 2026
+
+   PURPOSE
+   -------
+   Styles the Hero Section.
+
+   FEATURES
+   --------
+   ✔ Responsive Two Column Layout
+   ✔ Professional Logistics Design
+   ✔ Large Heading
+   ✔ Call-to-Action Buttons
+   ✔ Hero Image
+========================================================== */
+
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.hero{
+    background: var(--off-white);
+    padding: var(--space-9) 0;
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== 
+
+.hero__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: var(--space-8);
+}
+
+
+/* ==========================================================
+   CONTENT
+========================================================== 
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ==========================================================
+   BADGE
+========================================================== 
+
+.hero__badge{
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+
+    padding: .55rem 1rem;
+
+    background: rgba(212,160,23,.12);
+
+    color: var(--secondary-color);
+
+    font-size: var(--fs-sm);
+
+    font-weight: var(--fw-semibold);
+
+    border-radius: var(--radius-full);
+
+    margin-bottom: var(--space-3);
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== 
+
+.hero__title{
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+
+    font-weight: var(--fw-bold);
+
+    line-height: 1.1;
+
+    color: var(--primary-color);
+
+    margin-bottom: var(--space-3);
+
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== 
+
+.hero__description{
+
+    font-size: var(--fs-lg);
+
+    line-height: 1.8;
+
+    color: var(--text-secondary);
+
+    max-width: 650px;
+
+    margin-bottom: var(--space-5);
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== 
+
+.hero__buttons{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-3);
+
+    flex-wrap: wrap;
+
+}
+
+
+/* ==========================================================
+   SECONDARY BUTTON
+========================================================== 
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:.9rem 1.8rem;
+
+    border:2px solid var(--primary-color);
+
+    color:var(--primary-color);
+
+    border-radius:var(--radius-full);
+
+    font-weight:var(--fw-semibold);
+
+    transition:var(--transition-normal);
+
+}
+
+
+.btn-secondary:hover{
+
+    background:var(--primary-color);
+
+    color:var(--white);
+
+}
+
+
+/* ==========================================================
+   IMAGE
+========================================================== 
+
+.hero__image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+.hero__image img{
+
+    width:100%;
+
+    max-width:650px;
+
+    height:auto;
+
+    object-fit:contain;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+==========================================================
+
+@media (max-width:992px){
+
+    .hero{
+
+        padding:var(--space-8) 0;
+
+    }
+
+    .hero__container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .hero__content{
+
+        align-items:center;
+
+    }
+
+    .hero__description{
+
+        max-width:700px;
+
+    }
+
+    .hero__buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero__image{
+
+        margin-top:var(--space-5);
+
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .hero__title{
+
+        font-size:clamp(2.2rem,8vw,3.3rem);
+
+    }
+
+    .hero__description{
+
+        font-size:var(--fs-base);
+
+    }
+
+}
+
+
+@media (max-width:576px){
+
+    .hero{
+
+        padding:4rem 0;
+
+    }
+
+    .hero__buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .hero__buttons .btn,
+
+    .hero__buttons .btn-secondary{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}

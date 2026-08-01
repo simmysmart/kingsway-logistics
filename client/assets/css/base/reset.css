@@ -1,0 +1,145 @@
+/* ==========================================================
+   Project : Kingsway Multi-Services Nigeria Enterprise
+   File    : reset.css
+   Folder  : assets/css/base/
+   Author  : SimmySmart
+   Created : 2026
+
+   PURPOSE
+   -------
+   Provides a consistent starting point across browsers.
+
+   FEATURES
+   --------
+   ✔ Removes default browser margin & padding
+   ✔ Uses border-box sizing
+   ✔ Improves typography rendering
+   ✔ Makes images responsive
+   ✔ Resets lists, links and buttons
+========================================================== */
+
+/* ==========================================================
+   UNIVERSAL RESET
+========================================================== */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================================
+   ROOT SETTINGS
+========================================================== */
+
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* ==========================================================
+   MEDIA ELEMENTS
+========================================================== */
+
+img,
+picture,
+svg,
+video,
+canvas{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==========================================================
+   FORM ELEMENTS
+========================================================== */
+
+input,
+button,
+textarea,
+select{
+    font: inherit;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================================
+   LISTS
+========================================================== */
+
+ul,
+ol{
+    list-style: none;
+}
+
+/* ==========================================================
+   TABLES
+========================================================== */
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ==========================================================
+   HEADINGS
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font: inherit;
+}
+
+/* ==========================================================
+   PARAGRAPHS
+========================================================== */
+
+p{
+    overflow-wrap: break-word;
+}
+
+/* ==========================================================
+   TEXT SELECTION
+========================================================== */
+
+::selection{
+    background: var(--secondary-color);
+    color: var(--white);
+}

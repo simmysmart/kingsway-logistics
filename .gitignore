@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# Build folders
+dist/
+build/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Uploaded files
+backend/uploads/
+
+# Coverage
+coverage/

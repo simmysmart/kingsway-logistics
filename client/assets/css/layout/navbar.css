@@ -1,0 +1,183 @@
+/* ==========================================================
+   Project : Kingsway Multi-Services Nigeria Enterprise
+   File    : navbar.css
+   Folder  : assets/css/layout/
+   Author  : SimmySmart
+
+   PURPOSE
+   -------
+   Styles the main navigation.
+========================================================== */
+
+
+/* ==========================================================
+   NAVBAR
+========================================================== */
+
+
+.navbar{
+    width: 100%;
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.navbar__container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:90px;
+    
+}
+
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo img{
+    max-height: 100px;
+    width: auto;
+    display: block;
+}
+
+
+/* ==========================================================
+   MENU
+========================================================== */
+
+.navbar__menu{
+
+    display:flex;
+    align-items:center;
+    gap:2rem;
+
+}
+
+.navbar__link{
+    position: relative;
+    display: inline-block;
+    padding: .5rem 0;
+    color: var(--text-primary);
+    font-weight: var(--fw-medium);
+    transition: var(--transition-normal);
+}
+
+
+.navbar__link:hover{
+
+    color:var(--secondary-color);
+
+}
+
+
+/* Active Link */
+
+.navbar__link.active{
+
+    color:var(--secondary-color);
+
+}
+
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+.navbar__actions{
+
+    display:flex;
+    align-items:center;
+
+}
+
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:.9rem 1.6rem;
+
+    border-radius:var(--radius-full);
+
+    font-weight:600;
+
+    transition:var(--transition-normal);
+
+}
+
+
+.btn-primary{
+
+    background:var(--secondary-color);
+
+    color:var(--white);
+
+}
+
+
+.btn-primary:hover{
+
+    background:var(--primary-color);
+
+}
+
+
+/* ==========================================================
+   MOBILE BUTTON
+========================================================== */
+
+.navbar__toggle{
+
+    display:none;
+
+    background: none;
+
+    font-size:1.5rem;
+
+    cursor:pointer;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .navbar__menu{
+
+        display:none;
+
+    }
+
+    .navbar__actions{
+
+        display:none;
+
+    }
+
+    .navbar__toggle{
+
+        display:block;
+
+    }
+
+}

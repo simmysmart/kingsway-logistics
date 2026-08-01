@@ -1,0 +1,131 @@
+/* ==========================================================
+   Project : Kingsway Multi-Services Nigeria Enterprise
+   File    : typography.css
+   Folder  : assets/css/base/
+   Author  : SimmySmart
+   Created : 2026
+
+   PURPOSE
+   -------
+   Defines the typography system used throughout the website.
+
+   FEATURES
+   --------
+   ✔ Global font family
+   ✔ Heading hierarchy
+   ✔ Paragraph styling
+   ✔ Responsive typography
+   ✔ Readable line heights
+========================================================== */
+
+/* ==========================================================
+   GOOGLE FONTS
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-regular);
+    line-height: var(--line-height);
+    color: var(--text-primary);
+    background-color: var(--body-bg);
+}
+
+/* ==========================================================
+   HEADINGS
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--font-heading);
+    font-weight: var(--fw-bold);
+    line-height: var(--heading-line-height);
+    color: var(--text-primary);
+}
+
+h1{
+    font-size: var(--fs-5xl);
+}
+
+h2{
+    font-size: var(--fs-4xl);
+}
+
+h3{
+    font-size: var(--fs-3xl);
+}
+
+h4{
+    font-size: var(--fs-2xl);
+}
+
+h5{
+    font-size: var(--fs-xl);
+}
+
+h6{
+    font-size: var(--fs-lg);
+}
+
+/* ==========================================================
+   PARAGRAPHS
+========================================================== */
+
+p{
+    margin-bottom: var(--space-2);
+    color: var(--text-secondary);
+}
+
+/* ==========================================================
+   SMALL TEXT
+========================================================== */
+
+small{
+    font-size: var(--fs-sm);
+}
+
+/* ==========================================================
+   STRONG TEXT
+========================================================== */
+
+strong{
+    font-weight: var(--fw-bold);
+}
+
+/* ==========================================================
+   EMPHASIS
+========================================================== */
+
+em{
+    font-style: italic;
+}
+
+/* ==========================================================
+   RESPONSIVE TYPOGRAPHY
+========================================================== */
+
+@media (max-width:768px){
+
+   h1{
+    font-size: clamp(2.8rem, 5vw, var(--fs-5xl));
+}
+
+h2{
+    font-size: clamp(2rem, 4vw, var(--fs-4xl));
+}
+
+h3{
+    font-size: clamp(1.5rem, 3vw, var(--fs-3xl));
+}
+
+}
