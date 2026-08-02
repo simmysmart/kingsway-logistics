@@ -1,9 +1,8 @@
 /* ==========================================================
    Project : Kingsway Multi-Services Nigeria Enterprise
    File    : header.css
-   Folder  : assets/css/layout/
+   Path    : client/assets/css/layout/header.css
    Author  : SimmySmart
-   Created : 2026
 
    PURPOSE
    -------
@@ -11,7 +10,7 @@
 
    NOTE
    ----
-   Navigation styles are kept in navbar.css
+   Navigation styles are handled in navbar.css
 ========================================================== */
 
 
@@ -20,9 +19,15 @@
 ========================================================== */
 
 .header{
-    width: 75%;
-    position: relative;
-    z-index: var(--z-navbar);
+    width:100%;
+    position:relative;
+    z-index:1000;
+    
+}
+
+#logo1 {
+    width: 500px;
+    height: 500px;
 }
 
 
@@ -31,22 +36,22 @@
 ========================================================== */
 
 .top-bar{
-    background: var(--primary-color);
-    color: var(--white);
-    font-size: var(--fs-sm);
-    padding: 0.75rem 0;
+    background:var(--primary-color);
+    color:var(--white);
+    font-size:0.9rem;
+    padding:0.8rem 0;
 }
 
 
 /* ==========================================================
-   TOP BAR CONTAINER
+   TOP BAR CONTENT
 ========================================================== */
 
-.top-bar__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+.top-bar__content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:2rem;
 }
 
 
@@ -55,10 +60,32 @@
 ========================================================== */
 
 .top-bar__left{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+    flex-wrap:wrap;
+}
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+.top-bar__left a{
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+
+    color:var(--white);
+
+    transition:var(--transition-normal);
+}
+
+
+.top-bar__left a:hover{
+
+    color:var(--secondary-color);
+
 }
 
 
@@ -67,28 +94,9 @@
 ========================================================== */
 
 .top-bar__right{
-    display: flex;
-    align-items: center;
-}
-
-
-/* ==========================================================
-   LINKS
-========================================================== */
-
-.top-bar__link{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-
-    color: var(--white);
-
-    transition: var(--transition-normal);
-}
-
-
-.top-bar__link:hover{
-    color: var(--secondary-color);
+    display:flex;
+    align-items:center;
+    gap:.6rem;
 }
 
 
@@ -97,13 +105,30 @@
 ========================================================== */
 
 .top-bar i{
-    color: var(--secondary-color);
+    color:var(--secondary-color);
 }
 
 
 /* ==========================================================
    MOBILE
 ========================================================== */
+
+@media (max-width:992px){
+
+    .top-bar__content{
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        text-align:center;
+
+        gap:1rem;
+
+    }
+
+}
+
 
 @media (max-width:768px){
 
