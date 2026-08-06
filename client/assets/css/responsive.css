@@ -51,3 +51,19 @@
         padding: 30px 25px;
     }
 }
+@media (max-width: 992px) {
+
+    .process-container {
+        flex-direction: column;
+    }
+
+    .process-arrow {
+        transform: rotate(90deg);
+    }
+
+    .process-step {
+        width: 100%;
+        max-width: 400px;
+    }
+
+}
