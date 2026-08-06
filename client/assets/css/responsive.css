@@ -19,3 +19,20 @@
     }
 
 }
+@media (max-width: 768px) {
+
+    .tracking-content h2 {
+        font-size: 32px;
+    }
+
+    .tracking-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tracking-form input,
+    .tracking-form button {
+        width: 100%;
+        max-width: none;
+    }
+}
